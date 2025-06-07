@@ -1,4 +1,4 @@
-FROM ghcr.io/clemenselflein/open_mower_ros:main as base
+FROM ghcr.io/nekraus/open_mower_ros_mowgli:Mowgli-compatible as base
 
 # patch custom launch file that launches rosserial and including original launch file 
 COPY --link ./launch/mowgli.launch /opt/open_mower_ros/src/open_mower/launch/mowgli.launch
